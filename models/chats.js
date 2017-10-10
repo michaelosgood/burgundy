@@ -9,12 +9,12 @@ module.exports = function(sequelize, DataTypes) {
       },
       my_message: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         len: [1]
       },
       your_message: {
         type: DataTypes.TEXT,
-        allowNull: false,
+        allowNull: true,
         validate: {
           len: [1]
         }

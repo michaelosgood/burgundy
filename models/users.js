@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
     var users = sequelize.define("users", {
-        userName: {
+        email: {
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
@@ -24,14 +24,10 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false,
           
           },
-          location: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-       
-          },
+         
           picture: {
             type: DataTypes.TEXT,
-            allowNull: false,
+            allowNull: true,
            
           }
     });
